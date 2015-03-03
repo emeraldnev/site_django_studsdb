@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сервис учета студентов</title>
+    <meta name="description"
+          value="Система Учета Студентов Учебного Заведения" />
+
+    <!-- Добавление стилей -->
+   <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">   
+   <link rel="stylesheet"
+          href="./css/main.css"> 
+  <!--  <link rel="stylesheet"
+          href="home/bi/Desktop/static/bootstrap332/css/bootstrap.min.css">-->
+    
+  </head>
+
+  <body>
+    <!-- Start Container -->
+    <div class="container">
+
+      <!-- Start Header -->
+      <div class="row" id="header">
+
+        <!-- Logo -->
+        <div class="col-xs-8">
+          <h1>Сервис учета студентов</h1>
+        </div>
+        
+        <!-- Groups Selector -->
+        <div class="col-xs-4" id="group-selector">
+          <strong>Группа:</strong>
+          <select>
+            <option value="">Все студенты</option>
+            <option value="">213 группа, Сафиулин Дмитрий</option>
+            <option value="">214 группа, Рыжков Артур</option>
+          <select>
+        </div>
+
+      </div>
+      <!-- End Header -->
+
+      <!-- Start SubHeader -->
+      <div class="row" id="sub-header">
+        <div class="col-xs-12">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Студенты</a></li>
+            <li role="presentation"><a href="#">Посещения</a></li>
+            <li role="presentation"><a href="#">Группы</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End SubHeader -->
+
+      <!-- Start Main Page Content -->
+      <div class="row" id="content-columns">
+
+        <div class="col-xs-12" id="content-column">
+          
+          <!-- Status Message -->
+          <div class="alert alert-warning" role="alert">Изменения отменены</div>  
+          <h2>База Студентов</h2>
+
+          <!-- Add Student Button -->
+          <a class="btn btn-primary" href="#">Добавить студента</a>
+
+          <!-- Start Students Listing -->
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Фото</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>№ Билета</th>
+                <th>Действия</th>
+              </tr>
+            </thead>
+              <tr>
+                <td>1</td>
+                <td><img class="img-circle" height="30" widht="30"
+                         src="./img/Ryg.png"></td>
+                <td><a title="Редактировать" href="#">Рыжков</a></td>
+                <td><a title="Редактировать" href="#">Артур</a></td>
+                <td>2123</td>
+                <td>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toogle"
+                            type="button" data-toggle="dropdown">Действие
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1"
+                           href="#">Посещения</a>
+                      </li>
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1"
+                           href="#">Редактирование</a>
+                      </li>
+                      <li role="presentation">
+                        <a role="menuitem" tabindex="-1"
+                           href="#">Удалить</a>
+                      </li>
+                    </ul>
+                </td>
+              </tr>
+          </table>
+
+          <nav>
+	  <ul class="pagination">
+	    <li>
+	      <a href="#" aria-label="Previous">
+		<span aria-hidden="true">&laquo;</span>
+	      </a>
+	    </li>
+	    <li><a href="#">1</a></li>
+	    <li class="active"><a href="#">2</a></li>
+	    <li><a href="#">3</a></li>
+	    <li><a href="#">4</a></li>
+	    <li><a href="#">5</a></li>
+	    <li>
+	      <a href="#" aria-label="Next">
+		<span aria-hidden="true">&raquo;</span>
+	      </a>
+	    </li>
+	  </ul>
+          </nav>
+          <!-- End Students Listing -->
+
+        </div>
+      </div>
+      <!-- End Main Page Content -->
+
+      <!-- Start Footer -->
+      <div class="row" id="footer">
+        <div class="col-xs-12">
+          &copy; 2015 Сервис учета студентов
+        </div>
+      </div>
+      <!-- End Footer -->
+
+    </div>
+    <!-- End Container -->
+
+    
+    <!-- Раздел скриптов -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>  
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>  
+ <!--   <script src="href="home/bi/Desktop/static/bootstrap332/js/bootstrap.min.js"></script>
+
+    <script src="href=home/bi/Desktop/static/js/jquery.js"></script>-->
+
+  </body>
+</html>

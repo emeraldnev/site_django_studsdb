@@ -1,0 +1,30 @@
+/* Globak Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.alert {
+  /* Добавили расстояние сверху элемента: -top */
+  margin-top: 10px;
+}
+
+#footer {
+  /* поиск по id */
+  border-top: 1px solid #dddddd;
+  /* задаем внутреннее расстояние элемента до верхнего края*/
+  padding-top: 10px;
+}
+
+/* Groups Selector */
+#group-selector {
+  margin: 10px 0;
+}
+
+#group-selector select {
+  margin: 0;
+  width: 85%;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  height: 30px;
+  color: #555555;
+}
